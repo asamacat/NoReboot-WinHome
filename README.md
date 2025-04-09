@@ -41,8 +41,8 @@ Windows 10をサーバーとして使用する環境での自動再起動抑制�
 
 管理者権限でPowerShellを開き、以下のコマンドを実行します：
 リポジトリをクローン
-git clone https://github.com/yourusername/Win10-ServerGuard.git
-cd Win10-ServerGuard
+git clone https://github.com/yourusername/NoReboot-WinHome.git
+cd NoReboot-WinHome
 
 スクリプトを実行
 .\Install-ServerGuard.ps1
@@ -50,7 +50,7 @@ cd Win10-ServerGuard
 
 ### 方法2：リリースパッケージからインストール
 
-1. [リリースページ](https://github.com/yourusername/Win10-ServerGuard/releases)から最新バージョンをダウンロード
+1. [リリースページ](https://github.com/asamacat/NoReboot-WinHome/releases)から最新バージョンをダウンロード
 2. ZIPファイルを展開
 3. フォルダ内の`Install-ServerGuard.ps1`を管理者権限で実行
 
@@ -82,7 +82,7 @@ Set-ServerGuardConfig -ActiveHoursStart 7 -ActiveHoursEnd 22
 | 設定が適用されない | `gpupdate /force` コマンドを実行、または再起動 |
 | B-CASエラーが解消されない | `Repair-BCASService` コマンドを実行 |
 
-詳細な診断ログは `C:\ProgramData\Win10-ServerGuard\logs` に保存されます。
+詳細な診断ログは `C:\ProgramData\NoReboot-WinHome\logs` に保存されます。
 
 ## よくある質問（FAQ）
 
@@ -125,7 +125,7 @@ Set-ServerGuardConfig -ActiveHoursStart 7 -ActiveHoursEnd 22
 
 ## Overview
 
-**Win10-ServerGuard** is a comprehensive automation tool designed to solve common issues when using Windows 10 as a server environment. It addresses the following key problems:
+**NoReboot-WinHome** is a comprehensive automation tool designed to solve common issues when using Windows 10 as a server environment. It addresses the following key problems:
 
 - Unexpected automatic reboots caused by Windows Update
 - Network drive connection errors after system restart
@@ -153,8 +153,8 @@ The goal is to improve stability and reliability when using Windows 10 (a client
 Open PowerShell with administrator privileges and run:
 
 Clone the repository
-git clone https://github.com/yourusername/Win10-ServerGuard.git
-cd Win10-ServerGuard
+git clone https://github.com/yourusername/NoReboot-WinHome.git
+cd NoReboot-WinHome
 
 Run the installation script
 .\Install-ServerGuard.ps1
@@ -163,7 +163,7 @@ Run the installation script
 
 ### Method 2: Install from Release Package
 
-1. Download the latest version from the [releases page](https://github.com/yourusername/Win10-ServerGuard/releases)
+1. Download the latest version from the [releases page](https://github.com/yourusername/NoReboot-WinHome/releases)
 2. Extract the ZIP file
 3. Run `Install-ServerGuard.ps1` with administrator privileges
 
@@ -195,7 +195,7 @@ Common issues and their solutions:
 | Settings not applied | Run `gpupdate /force` command or restart the system |
 | B-CAS errors persist | Run `Repair-BCASService` command |
 
-Detailed diagnostic logs are saved in `C:\ProgramData\Win10-ServerGuard\logs`.
+Detailed diagnostic logs are saved in `C:\ProgramData\NoReboot-WinHome\logs`.
 
 ## Frequently Asked Questions
 
